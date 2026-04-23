@@ -6,7 +6,7 @@ parent: Microsoft 365
 # Entra Connect Filtering
 {: .d-inline-block }
 
-30 April 2017
+**30 April 2017**
 {: .label .label-grey }
 
 If you've installed Azure AD Connect to sync objects from your local Active Directory to Office 365, you may have seen that you can use filtering to stop objects being sync.  Yeah Yeah I hear you say, you can filter objects by the OU they're in.. Yes you can, but you can also filter by attributes on objects, which as you can imagine can be very handy.
