@@ -4,6 +4,7 @@ parent: Microsoft 365
 ---
 
 # Entra Connect Filtering
+### 30 April 2017
 
 If you've installed Azure AD Connect to sync objects from your local Active Directory to Office 365, you may have seen that you can use filtering to stop objects being sync.  Yeah Yeah I hear you say, you can filter objects by the OU they're in.. Yes you can, but you can also filter by attributes on objects, which as you can imagine can be very handy.
 
@@ -36,7 +37,5 @@ To Add 'DoNotSync' in ExtensionAttribute8 to a specific user
 ```
 set-aduser -Identity username -Replace @{ExtensionAttribute8='DoNotSync'}
 ```
-
-----
 
 [Microsoft Entra Connect Sync: Configure filtering]: https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-sync-configure-filtering#attribute-based-filtering
