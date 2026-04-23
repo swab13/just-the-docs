@@ -31,7 +31,6 @@ In the above example, the get-mailbox -resultsize unlimited retrieves that data
 
 # We can speed this up!
 
-
 The where executes locally, so we really want this to be executed on the remote server, decreasing the amount of data transferred back to your PowerShell session.  So how do we do that?  We can filter the results of the get-mailbox command using the -filter parameter and the command will only return what matches the filter and it performs it all on the remote server.
 
 So we could change this example
@@ -47,7 +46,6 @@ get-mailbox -resultsize unlimited -filter "ForwardingSmtpAddress -like '*'"
 ```
 
 # Prove it..
-
 
 Unfortunately due to way these commands work, we can't use -resultsize parameter to prove that these commands are faster. If we did use the -resultssize parameter e.g. -resultsize 100, the first example the command would only search the first 100 mailboxes while the updated version above would search mailboxes and return only first 100 forward results.
 
