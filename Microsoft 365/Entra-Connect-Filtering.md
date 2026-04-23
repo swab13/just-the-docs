@@ -1,7 +1,6 @@
 ---
 title: Entra Connect Filtering
 parent: Microsoft 365
-layout: default
 ---
 
 # Entra Connect Filtering
