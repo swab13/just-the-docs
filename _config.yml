@@ -5,3 +5,5 @@ color_scheme: dark
 
 url: https://swab13.github.io
 
+# For copy button on code
+enable_copy_code_button: true
